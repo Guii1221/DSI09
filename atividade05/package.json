@@ -1,0 +1,12 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "Um app de quiz com generator em JavaScript",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
