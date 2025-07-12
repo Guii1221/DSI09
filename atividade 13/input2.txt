@@ -1,0 +1,2 @@
+Este é o segundo arquivo de testes.
+Streams são poderosos no Node.js!

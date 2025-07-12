@@ -1,0 +1,14 @@
+{
+  "name": "jwt-auth-api",
+  "version": "1.0.0",
+  "description": "API REST com autenticação e autorização usando JWT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "body-parser": "^1.20.2"
+  }
+}
