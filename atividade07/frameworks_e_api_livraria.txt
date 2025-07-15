@@ -1,0 +1,92 @@
+1. CENÁRIOS PRÁTICOS DOS 6 FRAMEWORKS NODE.JS
+
+1) Express.js
+ Cenário: Aplicações web ou APIs REST simples e rápidas.
+ Por que usar: Leve, fácil de configurar, com grande comunidade e documentação.
+ Exemplo: API para blog, sistema de login, CRUD simples.
+
+2) NestJS
+ Cenário: Sistemas grandes, escaláveis, com arquitetura em camadas.
+ Por que usar: Usa TypeScript, arquitetura modular, ideal para projetos complexos.
+ Exemplo: Aplicações corporativas, APIs modulares, microsserviços.
+
+3) Koa
+ Cenário: Precisa de controle sobre middlewares e algo mais leve que Express.
+ Por que usar: Minimalista, moderno, usa async/await.
+ Exemplo: APIs pequenas e personalizadas.
+
+4) Hapi.js
+ Cenário: Aplicações com foco em segurança e validação de dados.
+ Por que usar: Sistema robusto de plugins, validação com Joi.
+ Exemplo: APIs com autenticação e regras específicas.
+
+5) Fastify
+ Cenário: APIs de alto desempenho e baixo consumo de recursos.
+ Por que usar: Extremamente rápido, suporte a JSON Schema.
+ Exemplo: APIs para fintechs, e-commerces, IoT.
+
+6) Sails.js
+ Cenário: Aplicações web estilo MVC, com geração automática de código.
+ Por que usar: Inspiração em Rails, reduz tempo de desenvolvimento.
+ Exemplo: Painéis administrativos, sistemas CRUD rápidos.
+
+
+2. SISTEMA DE LIVRARIA COM API REST
+
+Entidades:
+ Livro
+ Usuário
+ Autor
+ Categoria
+ Pedido (opcional)
+
+Rotas REST:
+
+LIVRO
+ GET /livros
+ GET /livros/:id
+ POST /livros
+ PUT /livros/:id
+ DELETE /livros/:id
+
+USUÁRIO
+ POST /usuarios
+ GET /usuarios/:id
+ POST /login
+
+AUTOR
+ GET /autores
+ POST /autores
+
+CATEGORIA
+ GET /categorias
+ POST /categorias
+
+Exemplos de dados trocados (JSON):
+
+POST /livros
+{
+  "titulo": "O Senhor dos Anéis",
+  "descricao": "Fantasia épica",
+  "autorId": 1,
+  "categoriaId": 3,
+  "preco": 59.90,
+  "estoque": 12
+}
+
+POST /usuarios
+{
+  "nome": "João Silva",
+  "email": "joao@email.com",
+  "senha": "senhaSegura123"
+}
+
+Framework Node.js mais adequado: NestJS
+Justificativa:
+ Arquitetura modular
+ Suporte a TypeScript, autenticação, validação
+ Ideal para sistemas com múltiplas entidades e regras de negócio
+
+Alternativas:
+ Express.js: simples e direto
+ Fastify: foco em performance
